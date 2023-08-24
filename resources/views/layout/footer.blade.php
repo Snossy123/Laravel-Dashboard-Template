@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer"  style="{{app()->getLocale() == 'ar' ? 'margin-left: 0 !important;':''}}">
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">

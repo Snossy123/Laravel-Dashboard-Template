@@ -18,18 +18,23 @@
         @include('layout.navbar')
         @include('layout.sidebar')
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper" style="{{app()->getLocale() == 'ar' ? 'margin-left: 0 !important;':''}}">
             <!-- Content Header (Page header) -->
             <div class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
+                            <h1 class="m-0">{{__('adminlte.dashboard')}}</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">@yield('section')</a></li>
-                                <li class="breadcrumb-item active">@yield('subsection')</li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">@yield('section')</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    @yield('subsection')
+                                </li>
+
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -44,7 +49,7 @@
         @include('layout.footer')
 
         <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
+        <aside class="control-sidebar control-sidebar-dark" style="left: 0; transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;">
             <!-- Control sidebar content goes here -->
         </aside>
         <!-- /.control-sidebar -->

@@ -32,4 +32,7 @@
 <script src="{{ asset('assets/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ asset('assets/js/pages/dashboard.js') }}"></script>
+{{-- Ionicons is a completely open-source icon set with 1,300 icons --}}
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 @yield('scripts')
